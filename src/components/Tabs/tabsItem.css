@@ -1,0 +1,14 @@
+#cardC{
+    overflow-x: hidden;
+ }
+.ima{
+    border-radius: 6px;
+    object-fit: contain;
+    transition: transform .2s;
+    width: 100%;
+    height: auto;
+   
+} 
+.ima:hover{
+    transform: scale(1.2);
+}

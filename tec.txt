@@ -1,0 +1,20 @@
+---react-multi-carousel---
+Es un componente de react que ofrece un carrusel de elementos y le podemos establecer una configuracion
+responsive. 
+-> npm install react-multi-carousel --save 
+-> <Skills />
+
+---react-bootstrap---
+Similar a Marerial UI, pero de bootstrap.
+->npm install react-bootstrap bootstrap
+-><NavBar />
+
+---react-on-screen---
+Revisa cuando un componente esta o no renderizado en la pantalla <TrackVisibility/>
+->npm i react-on-screen
+-><Banner/>
+
+---react-typed---
+Efecto de animacion de escritura, es un componente de react. Sencillo y rapido
+->npm i react-typed
+-><Banner/>

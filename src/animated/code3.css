@@ -1,0 +1,182 @@
+.illustration{
+    display: block;
+    width: 30%;
+    margin: 60px auto;
+    cursor: pointer;
+}
+/*Left-up*/
+#line-1{
+    transform: translate(-3%);
+    animation: movelineleft 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-3{
+    transform: translate(-3%);
+    animation: movelineleft 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-5{
+    transform: translate(-3%);
+    animation: movelineleft 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#arrow-1{
+    transform: translate(1%);
+    animation: movelineleftarrow 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+/* Right-up*/
+#line-2{
+    transform: translate(3%);
+    animation: moveright 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-4{
+    transform: translate(3%);
+    animation: moveright 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-6{
+    transform: translate(3%);
+    animation: moveright 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#arrow-2{
+    transform: translate(1%);
+    animation: moverightarrow 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+/*Left-down*/
+#line-7{
+    transform: translate(-3%);
+    animation: movelineleft 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-9{
+    transform: translate(-3%);
+    animation: movelineleft 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-11{
+    transform: translate(-3%);
+    animation: movelineleft 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+/*Right-down*/
+#line-8{
+    transform: translate(3%);
+    animation: moveright 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-10{
+    transform: translate(3%);
+    animation: moveright 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#line-12{
+    transform: translate(3%);
+    animation: moveright 1.5s 0s both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+@keyframes movelineleft{
+    0%{
+        transform: unset;
+    }
+    50%{
+        transform: translate(-3%);
+    }   
+    100%{
+        transform: unset;
+    }
+}
+@keyframes moveright{
+    0%{
+        transform: unset;
+    }
+    50%{
+        transform: translate(3%);
+    }   
+    100%{
+        transform: unset;
+    }
+}
+/*Arrows aniamtions*/
+@keyframes movelineleftarrow{
+    0%{
+        transform: unset;
+    }
+    50%{
+        transform: translate(-1%);
+    }   
+    100%{
+        transform: unset;
+    }
+}
+@keyframes moverightarrow{
+    0%{
+        transform: unset;
+    }
+    50%{
+        transform: translate(1%);
+    }   
+    100%{
+        transform: unset;
+    }
+}
+/*Card hover*/
+.illustration:hover #line-1{
+    animation-play-state: running;
+}
+.illustration:hover #line-2{
+    animation-play-state: running;
+}
+.illustration:hover #line-3{
+    animation-play-state: running;
+}
+.illustration:hover #line-4{
+    animation-play-state: running;
+}
+.illustration:hover #line-5{
+    animation-play-state: running;
+}
+.illustration:hover #line-6{
+    animation-play-state: running;
+}
+.illustration:hover #line-7{
+    animation-play-state: running;
+}
+.illustration:hover #line-8{
+    animation-play-state: running;
+}
+.illustration:hover #line-9{
+    animation-play-state: running;
+}
+.illustration:hover #line-10{
+    animation-play-state: running;
+}
+.illustration:hover #line-11{
+    animation-play-state: running;
+}
+.illustration:hover #line-12{
+    animation-play-state: running;
+}
+.illustration:hover #arrow-1{
+    animation-play-state: running;
+}
+.illustration:hover #arrow-2{
+    animation-play-state: running;
+}

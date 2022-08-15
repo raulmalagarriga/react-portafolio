@@ -1,0 +1,22 @@
+.wrap{
+    width: 20px;
+    height: auto;
+}
+
+/* Invisible texto */
+figcaption {
+    display:none; 
+    transition: ease .8s;
+  }
+  /* Visible texto */
+  div:hover > figcaption {
+    display:block;
+    margin-top: 15px;
+    color: white;
+    transition: ease .8s;
+  }
+  .div-img{
+    height: 40px;
+  }
+
+  

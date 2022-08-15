@@ -1,0 +1,104 @@
+.phone-send-active{
+    display: block;
+    width: 50%;
+    margin: 70px auto;
+    cursor: pointer;
+}
+/*Box chat animations*/
+.phone-send-active:hover #Box-1{
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+.phone-send-active:hover #Box-2{
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+.phone-send-active:hover #Box-3{
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+#Box-1{
+    /* animation: appear 2s; */
+    animation-play-state: paused;
+    animation: shake1 1.5s;
+}
+#Box-2{
+    /* animation: appear 2s 0.3s; */
+    animation-play-state: paused;
+    animation: shake2 1.5s;
+    
+}
+#Box-3{
+    /* animation: appear 2s 0.5s; */
+    animation-play-state: paused;
+    animation: shake1 1.5s;
+}
+/* @keyframes appear{
+    0%{
+        display: none;
+    }
+    10%{
+        display: block;
+        opacity: 0.1;
+    }
+    30%{
+        display: block;
+        opacity: 0.3;
+    }
+    40%{
+        display: block;
+        opacity: 0.4;
+    }
+    50%{
+        display: block;
+        opacity: 0.5;
+    }
+    70%{
+        display: block;
+        opacity: 0.7;
+    }
+    80%{
+        display: block;
+        opacity: 0.8;
+    }
+    90%{
+        display: block;
+        opacity: 0.9;
+    }
+    100%{
+        display: none;
+    }
+
+} */
+/*Phone shake animations*/
+/* #phone{
+    animation: shake2 1.5s;
+    animation-play-state: paused;
+  }
+.phone-send-active:hover #phone{
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}   */
+
+@keyframes shake1 {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(1deg); }
+    30% { transform: rotate(-1deg); }
+    45% { transform: rotate(1deg); }
+    60% { transform: rotate(-1deg); }
+    75% { transform: rotate(1deg); }
+    85% { transform: rotate(-1deg); }
+    92% { transform: rotate(1deg); }
+    100% { transform: rotate(0); }
+  }
+  @keyframes shake2 {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(-1deg); }
+    30% { transform: rotate(1deg); }
+    45% { transform: rotate(-1deg); }
+    60% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+    85% { transform: rotate(1deg); }
+    92% { transform: rotate(-1deg); }
+    100% { transform: rotate(1); }
+  }
