@@ -1,16 +1,16 @@
 import React, { useState ,useContext } from 'react'
 import { MenuOutlined } from '@mui/icons-material';
-import { AppBar, Drawer, FormControlLabel, FormGroup, Grid, IconButton, ImageListItem, Link, List, ListItem, ListItemIcon, ListItemText, Stack, Toolbar, Typography } from '@mui/material';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { AppBar, Drawer, FormControlLabel, FormGroup, Grid, IconButton, ImageListItem, Link, List, ListItem, ListItemIcon, ListItemText, Stack, Toolbar } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
 import HomeIcon from '@mui/icons-material/Home';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import { MaterialUISwitch } from './MaterialUISwitch';
 import themeContext from '../../context/themeContext';
 import LogoWhite from '../../assets/logoWhite.png';
 import LogoBlack from '../../assets/logoBlack.png';
+import Resume from '../../assets/Resume-EN.pdf';
 
 const NavBar = () => {
     // Global var for switch theme
@@ -62,7 +62,7 @@ const NavBar = () => {
                     </IconButton>
                     <Grid container direction='row' justifyContent='space-between' alignItems='center'>
                         {/* <Typography color='#ffffff' variant='h4' noWrap component="div">LOGO</Typography> */}
-                        <ImageListItem sx={{width:'20%' , height: 'auto'}}>
+                        <ImageListItem sx={{width:{xs:'40%' , sm: '20%' , md: '20%'}, height: 'auto'}}>
                             <img src={checked ? LogoBlack : LogoWhite} alt='logo'/>
                         </ImageListItem>
                         <Stack direction='row' spacing={2} sx={{
@@ -88,8 +88,8 @@ const NavBar = () => {
                                 <IconButton href='https://www.linkedin.com/in/rjmalagarrigat' target='_blank'>
                                     <LinkedInIcon color='primary' />
                                 </IconButton>
-                                <IconButton>
-                                    <WhatsAppIcon color='primary' />
+                                <IconButton href={Resume} download>
+                                    <ArticleIcon color='primary' />
                                 </IconButton>
                                 <FormGroup>
                                 <Stack direction='row'>

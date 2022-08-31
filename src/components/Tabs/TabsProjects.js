@@ -10,7 +10,7 @@ import { useTheme } from '@mui/material';
 import mega from '../../assets/mega.png';
 import rickwiki from '../../assets/rickwiki2.png';
 import loginredux from '../../assets/loginredux.png';
-import portafolio from '../../assets/porta.png'
+import portafolio from '../../assets/portafolio.png'
 import BackgroundManager from '../Particles/BackgroundManager';
 
 function TabPanel(props) {
@@ -72,7 +72,7 @@ const BasicTabs = () => {
             <Tab sx={{color: 'aux.text'}} label="MegaCopias Web Page" {...a11yProps(0)} />
             <Tab sx={{color: 'aux.text'}} label="User Login / Register" {...a11yProps(1)} />
             <Tab sx={{color: 'aux.text'}} label="Rick and Morty Wiki Page" {...a11yProps(2)} />
-            <Tab sx={{color: 'aux.text'}} label="This page :)" {...a11yProps(3)} />
+            <Tab sx={{color: 'aux.text'}} label="This portafolio" {...a11yProps(3)} />
           </Tabs>
         </Box>
         <SwipeableViews 
@@ -86,7 +86,8 @@ const BasicTabs = () => {
               image={mega}
               title={'MEGA COPIAS WEB PAGE'}
               linkGit={'https://github.com/raulmalagarriga/MegaCopias-WebPage'}
-              description={'Lizards are a widespread group of squamate reptiles,Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica ,with over 6,000 species, ranging across all continents except Antarctica'}
+              linkSite={'https://golden-licorice-64c434.netlify.app'}
+              description={"A beautifull landing page builded with React JS for front-end and pure CSS for styling, the AOS library was used for scroll animations."}
             />
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
@@ -95,7 +96,8 @@ const BasicTabs = () => {
               image={loginredux}
               title={'USER LOGIN/REGISTER'}
               linkGit={'https://github.com/raulmalagarriga/React-Login-and-Redux'}
-              description={'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica , Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica'}
+              linkSite={'https://login-register-redux.herokuapp.com/'}
+              description={"A simple user Login and Register made with Firebase Authentication and Redux for states, the application contains a simple dashboard when you login and a panel where you can change your user data like username, password and delete your  account."}
             />
           </TabPanel>
           <TabPanel value={value} index={2} dir={theme.direction}>
@@ -104,7 +106,8 @@ const BasicTabs = () => {
                 image={rickwiki}
                 title={'RICK & MORTY WIKI PAGE'}
                 linkGit={'https://github.com/raulmalagarriga/RickAndMorty'}
-                description={'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica'}
+                linkSite={'https://singular-pithivier-ad811c.netlify.app'}
+                description={"It's a wiki-fanpage, using the Rick and Morty API, you can search all the show's characters and their info."}
               />
           </TabPanel>
           <TabPanel value={value} index={3} dir={theme.direction}>
@@ -112,7 +115,8 @@ const BasicTabs = () => {
                 techs={['CSS' , 'HTML5' , 'reactJS' , 'materialUI']}
                 image={portafolio} 
                 title={'THIS PORTAFOLIO :)'}
-                description={'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica'}
+                linkGit={'https://github.com/raulmalagarriga/react-portafolio'}
+                description={`Do you like it? Try the other theme!`}
               />
           </TabPanel>
         </SwipeableViews>  

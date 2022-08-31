@@ -2,14 +2,14 @@ import React , {useContext} from 'react'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import ArticleIcon from '@mui/icons-material/Article';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Stack } from '@mui/material';
 import FooterBG from '../../animated/FooterBG';
 import themeContext from '../../context/themeContext';
 import FooterBGLight from '../../animated/FooterBGLight';
+import Resume from '../../assets/Resume-EN.pdf';
 
 
 const Footer = () => {
@@ -33,8 +33,8 @@ const Footer = () => {
                     <IconButton href='https://www.linkedin.com/in/rjmalagarrigat' target='_blank'>
                         <LinkedInIcon fontSize='large' color='primary' />
                     </IconButton>
-                    <IconButton>
-                        <WhatsAppIcon fontSize='large' color='primary' />
+                    <IconButton href={Resume} download>
+                        <ArticleIcon fontSize='large' color='primary' />
                     </IconButton>
                 </Stack>      
             </Toolbar>

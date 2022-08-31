@@ -3,7 +3,6 @@ import Typed from 'react-typed';
 import { Container, Grid, ImageListItem, Stack, Typography  } from '@mui/material';
 import themeContext from '../../context/themeContext';
 import Code2 from '../../animated/Code2';
-// import CodeBack from '../../assets/code-background.png';
 import './banner.css';
 
 const Banner = () => {
@@ -33,7 +32,7 @@ const Banner = () => {
                           strings={[
                             "Software developer",
                             "Computer engineer",
-                            "Front-end / back-end"
+                            "React developer"
                           ]}
                           typeSpeed={170}
                           backSpeed={120}
@@ -43,7 +42,7 @@ const Banner = () => {
                       <Typography  variant='h6' sx={{
                         fontSize: '1rem' , display: {xs: 'block' , md: 'block'}
                       }}>
-                        lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                        I'm a computer engineer with web developer skills, I'm focused on building aplications with the lastest best technologies and aplying best practices.
                       </Typography>
                     </Grid>
                     <Grid item xs={'none'} sm={6} md={6}>
@@ -69,7 +68,7 @@ const Banner = () => {
                               strings={[
                                 "Software developer",
                                 "Computer engineer",
-                                "Front-end / back-end"
+                                "React developer"
                               ]}
                               typeSpeed={170}
                               backSpeed={120}
@@ -79,7 +78,7 @@ const Banner = () => {
                           <Typography  variant='h6' sx={{
                             fontSize: '1rem' , display: {xs: 'block' , md: 'block'}
                           }}>
-                            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                            I'm a computer engineer with web developer skills, I'm focused on building aplications with the lastest best technologies and aplying best practices.
                           </Typography>
                         </Grid>
                         <Grid item xs={'none'} sm={6} md={6}>

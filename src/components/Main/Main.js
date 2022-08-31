@@ -1,4 +1,4 @@
-import { Container, Divider } from '@mui/material'
+import { Container } from '@mui/material'
 import React from 'react'
 import Skills from '../Skills/Skills'
 import Banner from '../Banner/Banner'
@@ -16,9 +16,7 @@ export const Main = () => {
           <NavBar />
           <Banner />
           <Skills />
-          {/* <Divider sx={{marginTop: '70px'}}/> */}
           <BasicTabs />
-          {/* <Divider sx={{marginTop: '70px'}}/> */}
           <Contact />
           <Footer />
       </Container>
