@@ -3,14 +3,15 @@ import { MenuOutlined } from '@mui/icons-material';
 import { AppBar, Drawer, FormControlLabel, FormGroup, Grid, IconButton, ImageListItem, Link, List, ListItem, ListItemIcon, ListItemText, Stack, Toolbar } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import ArticleIcon from '@mui/icons-material/Article';
+// import ArticleIcon from '@mui/icons-material/Article';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import HomeIcon from '@mui/icons-material/Home';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import { MaterialUISwitch } from './MaterialUISwitch';
 import themeContext from '../../context/themeContext';
 import LogoWhite from '../../assets/logoWhite.png';
 import LogoBlack from '../../assets/logoBlack.png';
-import Resume from '../../assets/Resume-EN.pdf';
+
 
 const NavBar = () => {
     // Global var for switch theme
@@ -49,7 +50,7 @@ const NavBar = () => {
                             <List sx={{
                                backgroundColor: 'backgroundB.main', color: 'primary.main' , height: '100vh'
                             }}>
-                                {['Home' , 'Skills' , 'Projects' , 'Lets conect!'].map((text, index) => (                  
+                                {['Home' , 'Skills' , 'My Projects' , 'Lets conect!'].map((text, index) => (                  
                                     <ListItem key={index}>
                                         <ListItemIcon>
                                             {index % 4 === 0 ? <HomeIcon /> : <AccountTreeIcon />}
@@ -88,8 +89,8 @@ const NavBar = () => {
                                 <IconButton href='https://www.linkedin.com/in/rjmalagarrigat' target='_blank'>
                                     <LinkedInIcon color='primary' />
                                 </IconButton>
-                                <IconButton href={Resume} download>
-                                    <ArticleIcon color='primary' />
+                                <IconButton href='https://drive.google.com/drive/folders/1pXGSCNAHk-p92R4LiXNfKBgiA_YyEvL_?usp=sharing' target='_blank'>
+                                    <PictureAsPdfIcon color='primary' />
                                 </IconButton>
                                 <FormGroup>
                                 <Stack direction='row'>

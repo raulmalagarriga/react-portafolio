@@ -5,7 +5,6 @@ import PhoneActive from '../../animated/PhoneActive';
 import BackgroundManager from '../Particles/BackgroundManager';
 
 const Contact = () => {
-
     
   return (
     <Grid id='Lets conect!' sx={{position: 'relative'}}>
@@ -32,7 +31,7 @@ const Contact = () => {
                     <form style={{width: '100%'}} action="https://formsubmit.co/rjmalagarrigat@gmail.com" method="POST">
                         <Grid item xs={12} sm={12} md={12}>
                             <TextField label="Name" placeholder='Name' name='name' variant="outlined" fullWidth
-                            sx={{marginBottom: 1 }} required/>
+                            sx={{marginBottom: 1}} required/>
                             <TextField label="e-mail" placeholder='e-mail' name='email' variant="outlined" fullWidth
                             sx={{marginBottom: 1 }} required/>
                         </Grid>

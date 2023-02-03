@@ -5,12 +5,10 @@
     margin-top: 150px;
   }
   .skill-bx-light {
-    /* COLOR : #e6e4e4 */
-    /* background: #DDDDDD; */
     background: #5dc1b9;
     border-radius: 20px;
     text-align: center;
-    padding: 60px 50px;
+    padding: 30px 50px;
     margin-top: -60px;
   }
   .skill-light h4 {

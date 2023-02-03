@@ -63,7 +63,7 @@ const BasicTabs = () => {
         </div>
         <Typography variant='h4' align='center' marginBottom={4} sx={{fontWeight: 'bold' , 
                 color: 'primary.main' , letterSpacing: 4}}>
-          PROJECTS
+          MY PROJECTS
         </Typography>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' , alignSelf:'center'}}>
           <Tabs value={value} onChange={handleChange}   variant="scrollable" sx={{
@@ -86,7 +86,7 @@ const BasicTabs = () => {
               image={mega}
               title={'MEGA COPIAS WEB PAGE'}
               linkGit={'https://github.com/raulmalagarriga/MegaCopias-WebPage'}
-              linkSite={'https://golden-licorice-64c434.netlify.app'}
+              linkSite={'https://sweet-dragon-c24795.netlify.app/'}
               description={"A beautifull landing page builded with React JS for front-end and pure CSS for styling, the AOS library was used for scroll animations."}
             />
           </TabPanel>
